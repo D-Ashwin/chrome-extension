@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our sample Chrome Extension | Papers</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popup.js"></script>
+    <style type="text/css">
+    
+        html{
+            border-radius: 10px;
+        }
+    .Main-UI {
+        background: url('bg.gif');
+        background-size: 240px;
+     
+        height: 300px;
+        width: 255px;
+        border: 1px;
+        border-color: black;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    .footer {
+        display: block;
+        bottom: 0;
+        text-align: center;
+        color: red;
+        background-color: black;
+    }
+
+    .input-text {
+        position: center;
+    }
+
+    .input-label {
+        color: white;
+        text-align: center;
+    }
+.nav-tabs {
+    border-bottom: 1px solid black;
+
+}
+.tab-pane {
+    opacity: 0.8 !important;
+    background-color: black;
+}
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        font-size: 10px;
+        color: red;
+        font-weight: bolder;
+        margin-top: 7px;
+    }
+
+    hr {
+        margin-top: 0px;
+        margin-bottom: 4px;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    textarea {
+        height: 40px;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class='container Main-UI'>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">URL Encode</a></li>
+            <li><a data-toggle="tab" href="#menu1">URL Dencode</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <br>
+                <!-- URL Encode -->
+                <p class="input-label" id="input-label"><b>Input String :</b></p>
+                <p align="center"><textarea class="input-text encode-input"></textarea></p>
+                <p align=center><button class="btn btn-primary btn-sm submit-encode" id="getResults">Submit</button></p>
+                <hr>
+                <p class="input-label"><b>Result</b></p>
+                <p align="center"><textarea class="input-text encode-output" id="results"></textarea></p>
+                <!-- URL Encode ENDS -->
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <br>
+                <!-- URL Decode -->
+                <p class="input-label"><b>Input String :</b></p>
+                <p align="center"><textarea class="input-text decode-input"></textarea></p>
+                <p align=center><button class="btn btn-primary btn-sm submit-decode">Submit</button></p>
+                <hr>
+                <p class="input-label"><b>Result</b></p>
+                <p align="center"><textarea class="input-text decode-output"></textarea></p>
+                <!-- URL Decode ENDS -->
+            </div>
+        </div>
+    </div>
+
+    <div style="color: red;background-color: black;text-align: center;">Made by Mr H4cK3r 45H</div>
+</body>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+<!--  -->
+
+</html>
